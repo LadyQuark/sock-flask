@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Connect to websocket
     var socket = io('/log');
-    /* var socket = io(location.pathname); */
 
     // When connected
     socket.on('connect', () => {
-        //TODO
         console.log("Connected!")
         
         // Each button should emit a "user event" when clicked
